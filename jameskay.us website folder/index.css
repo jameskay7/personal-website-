@@ -1,0 +1,115 @@
+*{
+    -webkit-font-smoothing: antialiased;
+    margin: 1.9px;
+    padding:0;
+    background-color: whitesmoke;
+    overflow: hidden;
+}
+
+header{
+    font-size: 25px;
+    
+}
+
+
+header h1 {
+    text-align: center;
+    margin-top: 2px;
+    font-family: 'Snell Roundhand';
+    font-weight: lighter;
+    flex-wrap: wrap;
+    
+}
+
+header p {
+    text-align: center;
+    font-family: 'Times';
+    font-size: 22px;
+    font-weight: light;
+}
+
+
+
+section{
+    width: 75%;
+    margin: 50px;
+    height: 100%;
+    padding: 5px ;
+}
+
+section .link{
+    font-family: forma-djr-display, sans-serif;
+    font-weight: 300;
+    font-size: 55px;
+    text-decoration: none;
+    color: black;
+    line-height: 1.9 ; 
+}
+
+#socialmedialinks{
+    display: none;
+}
+
+.link:hover {
+    color: #73a942;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 900px){
+
+    #name h1{
+        font-size: 29px;
+    }
+
+    header p{
+        font-size: 12px;
+        font-family: 'Times';
+    }
+
+    section .link{
+        font-weight: 300;
+        font-size: 30px;
+        text-decoration: none;
+        color: black;
+        line-height: 1.9 ; 
+    }
+
+    #square-bg{
+        width: 55%;
+        border: 2px solid white;
+    }
+
+    #square-bg, section, .link{
+        /*background-color: white;*/
+        animation: backgroundColorPalette 5s infinite ease-in-out;
+        margin-top: 40px;
+    }
+
+    section{
+        margin: 30px;
+    }
+    
+    section .link{
+        font-size: 27px;
+        font-family: forma-djr-micro, sans-serif;
+    }
+    
+
+
+
+    @keyframes backgroundColorPalette{
+        0%{
+            background: white;
+        }
+        50% {
+            background: #d9d9d9;
+        }
+        100%{
+            background: white;
+        }
+    }
+}

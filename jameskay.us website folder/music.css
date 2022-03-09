@@ -1,0 +1,137 @@
+*{
+    -webkit-font-smoothing: antialiased;
+    margin: 1.9px;
+    padding:0;
+    background-color: whitesmoke;
+    text-rendering: optimizeLegibility;
+}
+
+
+.album-coverholder{
+    display: flex;
+    height: auto;
+    justify-content: center;
+    padding: 0px;
+    margin: 0;
+    
+}
+
+
+.album-coverholder img{
+    width: 30%;
+    margin: 0;
+    padding: 5px;
+    opacity: 0.9;
+    border: 2px solid white;
+    
+}
+
+.album-coverholder img:hover{
+    opacity: 2;
+    cursor: pointer;
+}
+
+.albums{
+    display: flex;
+    width: auto;
+}
+
+.track-row a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.track-row li {
+    
+    list-style: none;
+    font-size: 15px;
+    font-family: 'Times';
+
+}
+
+.track-row{
+    text-align: center;
+    flex-wrap: wrap;
+    font-family: 'Times';
+    font-weight: normal;
+    width: 100%;  
+    margin-left: 1px;
+    line-height: 1.2;
+}
+
+
+.track-row li:hover{
+    cursor: pointer;
+    color: green;
+}
+
+
+
+#SOA{
+    font-size: 25px;
+    font-family: forma-djr-display, sans-serif;
+    font-weight: normal;
+}
+
+#TNT, #IS-250, #WYC, #IdleInterlude, #Pnuemonia, #coastal {
+    font-size: 20px;
+    font-family: forma-djr-display, sans-serif; 
+}
+
+.tnt-lyric-holder, .is250-lyric-holder, .wyc-lyric-holder, .idle-lyric-holder, .pnuemonia-lyric-holder, .coastal-lyric-holder{
+  display: none;
+  font-family: forma-djr-display, sans-serif;
+  flex-wrap: wrap;
+  text-align: center;
+  font-size: 14px ;
+}
+
+
+
+
+@media only screen and (max-width: 999px){
+    .album-coverholder{
+        display: flex;
+        justify-content: center;
+        padding: 45px;
+    }
+
+    .album-coverholder img{
+        width: 33%;
+    }
+
+    .albums{
+        display: flex;
+    }
+
+    #TNT, #IS-250, #WYC, #IdleInterlude, #Pnuemonia, #coastal{
+        font-size: 17px;
+        font-family: forma-djr-display, sans-serif; 
+    }
+
+    #SOA{
+        font-size: 24px;
+        font-style: bold;
+        font-family: forma-djr-display, sans-serif;
+        font-weight: normal;
+    }
+
+    .tnt-lyric-holder, .is250-lyric-holder, .wyc-lyric-holder, .idle-lyric-holder, .pnuemonia-lyric-holder, .coastal-lyric-holder{
+        display: none;
+        font-family: forma-djr-display, sans-serif;
+        font-size: 13px;
+        flex-wrap: wrap;
+        text-align: center;
+      }
+
+    
+
+
+
+   
+
+    
+
+}
+
